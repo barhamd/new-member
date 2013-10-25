@@ -5,11 +5,12 @@
     %script{src: "/js/bootstrap.min.js"}
 
     %link{rel: "stylesheet", href: "/css/bootstrap.css"}
+    %link{rel: "stylesheet", href: "/css/myapp.css"}
   %body
     .container
-      %h1 So you want to become a Gainesville Hackerspace member?
-      %h2 Here's how to do it.
-      %form.col-lg-6
+      %h1.text-center{:style => "margin-top: 50px"} So you want to become a Gainesville Hackerspace member?
+      %h2.text-center{:style => "margin-top: 50px"} Here's how to do it.
+      %form.col-lg-6.center{:style => "margin-top: 50px"}
         %input.form-control{type: "text", name: "first_name", placeholder: "First name"}
         %br
         %input.form-control{type: "text", name: "last_name", placeholder: "Last name"}

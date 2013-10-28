@@ -8,13 +8,43 @@
     %link{rel: "stylesheet", href: "/css/myapp.css"}
   %body
     .container
-      %h1.text-center{:style => "margin-top: 50px"} So you want to become a Gainesville Hackerspace member?
-      %h2.text-center{:style => "margin-top: 50px"} Here's how to do it.
-      %form.col-lg-6.center{:style => "margin-top: 50px"}
-        %input.form-control{type: "text", name: "first_name", placeholder: "First name"}
-        %br
-        %input.form-control{type: "text", name: "last_name", placeholder: "Last name"}
-        %br
-        %input.form-control{type: "text", name: "email", placeholder: "Email"}
-        %br
-        %input.form-control{type: "text", name: "address", placeholder: "Address"}
+      %h1.text-center So you want to become a Gainesville Hackerspace member?
+      %h2.text-center Here's how to do it.
+      %form.col-lg-6.center.form-horizontal.input-sm{role: "form"}
+        .form-group
+          %label.col-lg-4.control-label{for: "first_name"} First Name
+          .col-lg-8
+            %input.form-control{type: "text", name: "first_name", placeholder: "First name"}
+        .form-group
+          %label.col-lg-4.control-label{for: "last_name"} Last Name
+          .col-lg-8
+            %input.form-control{type: "text", name: "last_name", placeholder: "Last name"}
+        .form-group
+          %label.col-lg-4.control-label{for: "phone"} Phone
+          .col-lg-8
+            %input.form-control{type: "text", name: "phone", placeholder: "Phone"}
+        .form-group
+          %label.col-lg-4.control-label{for: "email"} Email
+          .col-lg-8
+            %input.form-control{type: "text", name: "email", placeholder: "Email"}
+        .form-group
+          %label.col-lg-4.control-label{for: "address"} Address
+          .col-lg-8
+            %input.form-control{type: "text", name: "address", placeholder: "Address"}
+        .form-group
+          %label.col-lg-4.control-label{for: "emergency_contact"} Emergency Contact
+          .col-lg-8
+            %input.form-control{type: "text", name: "emergency_contact", placeholder: "E.g. Jane Doe"}
+        .form-group
+          %label.col-lg-4.control-label{for: "emergency_contact_phone"} Emergency Contact Phone
+          .col-lg-8
+            %input.form-control{type: "text", name: "emergency_contact_phone", placeholder: "Emergency contact phone"}
+        .form-group
+          %label.col-lg-4.control-label{for: "relationship"} Relationship
+          .col-lg-8
+            %input.form-control{type: "text", name: "relationship", placeholder: "Relationship"}
+        .form-group
+          %label.col-lg-4.control-label{for: "preferred_id"} Preferred ID
+          .col-lg-8
+            %input.form-control{type: "text", name: "preferred_id", placeholder: "E.g. jsmith"}
+        %button.btn.btn-primary{type: "text"} Submit

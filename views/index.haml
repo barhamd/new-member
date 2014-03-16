@@ -10,7 +10,7 @@
     .container
       %h1.text-center So you want to become a Gainesville Hackerspace member?
       %h2.text-center Here's how to do it.
-      %form.col-lg-6.center.form-horizontal.input-sm{role: "form"}
+      %form.col-lg-6.center.form-horizontal.input-sm{role: "form", action: "/submit", method: "post"}
         .form-group
           %label.col-lg-4.control-label{for: "first_name"} First Name
           .col-lg-8
@@ -48,4 +48,4 @@
           .col-lg-8
             %input.form-control{type: "text", name: "preferred_id", placeholder: "jsmith"}
         .form-group
-          %button.btn.btn-teal.btn-lg.btn-block{type: "text"} Submit
+          %input.btn.btn-teal.btn-lg.btn-block{type: "submit", value: "Make Me a Member!"}

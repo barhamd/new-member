@@ -12,7 +12,7 @@ post '/submit' do
     :subject => 'Potential Member Info!',
     :html_body => "
       <h1> Here's the info!</h1>
-      <ul>
+      <ul style='list-style-type: none;'>
         <li><b>First Name:</b> #{params[:first_name]}</li>
         <li><b>Last Name:</b> #{params[:last_name]}</li>
         <li><b>Phone:</b> #{params[:phone]}</li>

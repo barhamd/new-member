@@ -1,1 +1,15 @@
-%h2 test
+!!!
+%html{lang: "en"}
+  %head
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    %script{src: "/js/bootstrap.min.js"}
+
+    %link{rel: "stylesheet", href: "/css/bootstrap.css"}
+    %link{rel: "stylesheet", href: "/css/myapp.css"}
+  %body
+    .container
+      %h1.text-center Thank you, #{@first_name}!
+      %h2.text-center The new member vote is always the first Tuesday of the month.
+      %h3.text-center
+        If you have any other questions, feel free to contact the
+        %a{href: "mailto:#{ENV['SECRETARY_EMAIL']}"} hackerspace secretary.

@@ -13,15 +13,15 @@ post '/submit' do
     :html_body => "
       <h1> Here's the info!</h1>
       <ul>
-        <li>First Name: #{params[:first_name]}</li>
-        <li>Last Name: #{params[:last_name]}</li>
-        <li>Phone: #{params[:phone]}</li>
-        <li>Email: #{params[:email]}</li>
-        <li>Address: #{params[:address]}</li>
-        <li>Emergency Contact: #{params[:emergency_contact]}</li>
-        <li>Emergency Contact Phone: #{params[:emergency_contact_phone]}</li>
-        <li>Relationship: #{params[:relationship]}</li>
-        <li>Preferred ID: #{params[:preferred_id]}</li>
+        <li><b>First Name:</b> #{params[:first_name]}</li>
+        <li><b>Last Name:</b> #{params[:last_name]}</li>
+        <li><b>Phone:</b> #{params[:phone]}</li>
+        <li><b>Email:</b> #{params[:email]}</li>
+        <li><b>Address:</b> #{params[:address]}</li>
+        <li><b>Emergency Contact:</b> #{params[:emergency_contact]}</li>
+        <li><b>Emergency Contact Phone:</b> #{params[:emergency_contact_phone]}</li>
+        <li><b>Relationship:</b> #{params[:relationship]}</li>
+        <li><b>Preferred ID:</b> #{params[:preferred_id]}</li>
       </ul>
     ",
     :via => :smtp,
@@ -36,5 +36,6 @@ post '/submit' do
     }
   })
 
+  @first_name = params[:first_name]
   haml :submit
 end
